@@ -1,16 +1,19 @@
 
-const express=require('express')
+// const express=require('express')
+import express from 'express'
+// const router=express.Router()
 
-const Workout = require('../model/workoutModel')
+// const Workout = require('../models/workoutModel.js')
+import Workout from '../models/workoutModel.js'
 
 const router = express.Router()
+import { deleteWorkout, getWorkouts } from '../controllers/workoutContrrollers.js'
 
 
 
 // GET all workouts
-router.get('/', (req, res) => {
-    res.json({mssg: 'GET all workouts'})
-  })
+router.get('/', getWorkouts)
+router.delete('/:id', deleteWorkout)
 
   router.post('/', async (req, res) => {
     const {title, load, reps} = req.body
@@ -23,4 +26,5 @@ router.get('/', (req, res) => {
       }
   })
 
-module.exports=router
+// module.exports=router
+export default router

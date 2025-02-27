@@ -1,13 +1,13 @@
 
-require('dotenv').config()
+// require('dotenv').config()
+import dotenv from 'dotenv'
+dotenv.config()
 
-const express = require('express')
-
-const mongoose=require('mongoose')
+import express from 'express'
+import mongoose from 'mongoose'
+import workoutRoutes from './routes/workouts.js'
 
 const app=express()
-
-const workoutRoutes=require('./routes/workouts')
 
 app.use(express.json())
 
