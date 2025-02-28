@@ -2,16 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
 /* layout */
 :root {
-  --primary: #1aac83;
+  --primary: #eaf576;
   --error: #e7195a;
  }
  body {
-  background: #f1f1f1;
+  background: #7ac7ea;
   margin: 0;
   font-family: "Poppins";
  }
  header {
-  background: #fff;
+  background: #f78c8c;
  }
  header .container {
   max-width: 1400px;
@@ -29,4 +29,73 @@
   max-width: 1400px;
   padding: 20px;
   margin: 0 auto;
+ }
+
+ /* homepage */
+.home {
+  display: grid
+ ;
+  grid-template-columns: 3fr 1fr
+ ;
+  gap: 100px
+ ;
+ }
+ .workout-details {
+  background: #edd789
+ ;
+  border-radius: 4px
+ ;
+  margin: 20px auto
+ ;
+  padding: 20px
+ ;
+  position: relative
+ ;
+  box-shadow: 2px 2px 5px rgba
+ (
+ 0
+ ,
+ 0
+ ,
+ 0
+ ,0.05);
+ }
+ .workout-details h4 {
+  margin:
+ 0
+ 0 10px
+ 0
+ ;
+  font-size: 1.2em
+ ;
+  color: var
+ (--primary);
+ }
+ .workout-details
+ p {
+  margin:
+ 0
+ ;
+  font-size: 0.9em
+ ;
+  color: #464646
+ ;
+ }
+ .workout-details span {
+  position: absolute
+ ;
+  top: 20px
+ ;
+  right: 20px
+ ;
+  cursor: pointer
+ ;
+  background: #eea5f7
+ ;
+  padding: 6px
+ ;
+  border-radius: 50%
+ ;
+  color: #fc9898
+ ;
  }
